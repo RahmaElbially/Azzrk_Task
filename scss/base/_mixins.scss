@@ -3,3 +3,69 @@
   height: $h;
   border-radius: $radius;
 }
+
+@mixin flex($JC, $AI) {
+  display: flex;
+  justify-content: $JC;
+  align-items: $AI;
+}
+
+@mixin title-section($title-color: $primary-color) {
+  .title {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto 3rem;
+    padding: 1rem 2.5rem;
+    border: 3px solid $title-color;
+    text-align: center;
+
+    .content {
+      h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $title-color;
+      }
+
+      p {
+        font-size: 1rem;
+        color: $title-color;
+        margin-top: 0.5rem;
+      }
+    }
+
+    .top-shape {
+      position: absolute;
+      top: -15px;
+      left: -40px;
+      width: 300px;
+      height: 5px;
+      background: linear-gradient(to right, $secondary-color, transparent);
+    }
+
+    .right-shape {
+      position: absolute;
+      right: 5px;
+      top: -20px;
+      width: 4px;
+      height: 120px;
+      background: linear-gradient(to bottom, $secondary-color, transparent);
+    }
+
+    .bottom-shape {
+      position: absolute;
+      bottom: -15px;
+      left: 40px;
+      width: 250px;
+      height: 5px;
+      background: linear-gradient(to right, transparent, $secondary-color);
+    }
+  }
+
+  @media (max-width: 400px) {
+    .title {
+      .top-shape {
+        left: 10px !important;
+      }
+    }
+  }
+}

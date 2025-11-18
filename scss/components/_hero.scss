@@ -7,6 +7,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  overflow-x: hidden;
 
   .red-rectangle {
     width: 37vw;
@@ -39,7 +40,7 @@
 
     .data {
       position: absolute;
-      left: 18%;
+      left: 17.2%;
       top: 30%;
       width: 30rem;
       h1 {
@@ -72,6 +73,27 @@
         font-family: "Tajawal";
       }
     }
+    .data-without-h {
+      position: absolute;
+      bottom: 7%;
+      right: 7%;
+      display: none;
+      p {
+        color: $white-color;
+        font-size: 1.5rem;
+        width: 60%;
+        font-weight: 400;
+        margin-bottom: 1rem;
+      }
+      button {
+        background-color: transparent;
+        border: 1px solid $white-color;
+        color: $white-color;
+        padding: 0.5rem 2.5rem;
+        font-size: 1.2rem;
+        font-family: "Tajawal";
+      }
+    }
   }
 
   .red-rectangle-left {
@@ -81,5 +103,223 @@
     width: 20vw;
     height: 45vh;
     background-color: $secondary-color;
+  }
+}
+
+@media (max-width: 1440px) {
+  .main-content {
+    .data {
+      left: 15.5% !important;
+    }
+  }
+}
+
+@media (max-width: 1360px) {
+  .main-content {
+    .data {
+      left: 13% !important;
+      h1 {
+        font-size: 3.8rem !important;
+        width: 80%;
+      }
+      p {
+        margin: 1.5rem 6rem 1.5rem 0 !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 1290px) {
+  .main-content {
+    .data {
+      left: 11.2% !important;
+    }
+  }
+  .red-rectangle-left {
+    width: 19vw !important;
+  }
+}
+
+@media (max-width: 1225px) {
+  .main-content {
+    .data {
+      left: 9.5% !important;
+      p {
+        font-size: 1.3rem !important;
+        margin: 1.5rem 5rem 1.5rem 0 !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 1160px) {
+  .main-content {
+    .data {
+      left: 7.6% !important;
+      p {
+        font-size: 1.2rem !important;
+        margin: 1.5rem 6rem 1.5rem 0 !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .main-content {
+    .data {
+      left: 5.2% !important;
+      p {
+        font-size: 1.2rem !important;
+        margin: 1.5rem 6rem 1.5rem 0 !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .main-content {
+    .data {
+      left: 2.5% !important;
+      p {
+        display: none;
+      }
+      button {
+        display: none;
+      }
+    }
+    .data-without-h {
+      display: block !important;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .numbers {
+    right: 3% !important;
+  }
+  .main-content {
+    img {
+      width: 60% !important;
+      left: 32% !important;
+    }
+    .data {
+      left: 3% !important;
+      width: 22rem !important;
+      h1 {
+        font-size: 4rem !important;
+      }
+    }
+    .data-without-h {
+      display: block !important;
+      bottom: 5% !important;
+    }
+  }
+
+  .red-rectangle-left {
+    height: 35vh !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .main-content {
+    img {
+      width: 65% !important;
+      left: 25% !important;
+    }
+    .data {
+      left: 6.5% !important;
+      top: 22% !important;
+      width: 15rem !important;
+      h1 {
+        font-size: 4rem !important;
+      }
+    }
+    .data-without-h {
+      display: block !important;
+      bottom: 5% !important;
+    }
+  }
+
+  .red-rectangle-left {
+    height: 35vh !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    img {
+      width: 70% !important;
+      left: 20% !important;
+    }
+    .data {
+      left: 6% !important;
+      top: 25% !important;
+      width: 10rem !important;
+      h1 {
+        font-size: 3rem !important;
+      }
+    }
+  }
+  .red-rectangle-left {
+    height: 25vh !important;
+    width: 25vw !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .main-content {
+    img {
+      width: 80% !important;
+      left: 10% !important;
+    }
+    .data {
+      left: 0% !important;
+      width: 10rem !important;
+      h1 {
+        font-size: 2.8rem !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .main-content {
+    img {
+      width: 75% !important;
+      left: 15% !important;
+      top: 20% !important;
+    }
+    .data {
+      left: 0% !important;
+      top: 25% !important;
+      width: 9rem !important;
+      h1 {
+        font-size: 2.5rem !important;
+      }
+    }
+    .data-without-h {
+      bottom: 10% !important;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .main-content {
+    img {
+      width: 80% !important;
+      left: 8% !important;
+      top: 25% !important;
+    }
+    .data {
+      left: 0% !important;
+      top: 35% !important;
+      width: 8rem !important;
+      h1 {
+        font-size: 2rem !important;
+      }
+    }
+    .data-without-h {
+      bottom: 10% !important;
+    }
   }
 }

@@ -19,7 +19,7 @@
             <div class="container navbar">
                 <div class="links">
                     <div class="logo">
-                        <img src="assets/images/logo.png" />
+                        <img src="assets/images/logo.png" alt="Logo Image" />
                     </div>
                     <ul>
                         <li><a href="#">الرئيسية</a></li>
@@ -30,30 +30,49 @@
                 </div>
 
                 <ul class="icons">
-                    <li>
-                        <div>
-                            <img src="assets/icons/search-normal.svg" />
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="assets/icons/user.svg" />
-                        </div>
-                    </li>
-                    <li>
-                        <div>
-                            <img src="assets/icons/heart.svg" />
-                        </div>
-                    </li>
+                    <li> <img src="assets/icons/search-normal.svg" alt="Search Icon" /> </li>
+                    <li> <img src="assets/icons/user.svg" alt="User Icon" /> </li>
+                    <li><img src="assets/icons/heart.svg" alt="Heart Icon" /></li>
                     <li>
                         <div class="shopping-cart">
                             <div class="num">0</div>
-                            <img src="assets/icons/shopping-cart.svg" />
+                            <img src="assets/icons/shopping-cart.svg" alt="Shopping Icon" />
                         </div>
                     </li>
                 </ul>
             </div>
         </nav>
+
+        <!-- Mobile Navbar -->
+        <nav class="mobile-navbar">
+            <div class="mobile-container mobile-nav">
+                <div class="mobile-logo">
+                    <img src="assets/images/logo.png" alt="Logo Image" />
+                </div>
+
+                <img src="assets/icons/burger-icon.svg" class="burger-icon" alt="Burger Icon" />
+            </div>
+
+            <div class="mobile-menu">
+                <ul class="mobile-links">
+                    <li><a href="#">الرئيسية</a></li>
+                    <li><a href="#">الأقسام</a></li>
+                    <li><a href="#">جميع المنتجات</a></li>
+                    <li><a href="#">التخفيضات</a></li>
+                </ul>
+
+                <ul class="mobile-icons">
+                    <li><img src="assets/icons/search-normal.svg" alt="Search Icon" /></li>
+                    <li><img src="assets/icons/user.svg" alt="User Icon" /></li>
+                    <li><img src="assets/icons/heart.svg" alt="Heart Icon" /></li>
+                    <li class="shopping-cart">
+                        <div class="num">0</div>
+                        <img src="assets/icons/shopping-cart.svg" alt="Shopping Icon" />
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
 
         <!-- Numbers -->
         <ul class="numbers">
@@ -64,7 +83,7 @@
 
         <!-- Main Content -->
         <div class="main-content">
-            <img src="assets/images/hero1.png" alt="">
+            <img src="assets/images/hero1.png" alt="Hero Image">
             <div class="data">
                 <h1>
                     <span>الرا</span>
@@ -75,10 +94,274 @@
                 <p>كل ما تحتاجه لتحقيق أهدافك الرياضية في مكان واحد</p>
                 <button>تسوق الآن</button>
             </div>
+            <!-- Data Mobile -->
+            <div class="data-without-h">
+                <p>كل ما تحتاجه لتحقيق أهدافك الرياضية في مكان واحد</p>
+                <button>تسوق الآن</button>
+            </div>
         </div>
 
         <div class="red-rectangle-left"></div>
     </main>
+    <!-- End Hero Section -->
+
+    <!-- Products -->
+    <section class="products container">
+        <div class="title">
+            <span class="top-shape"></span>
+            <div class="content">
+                <h2>ابرز المنتجات</h2>
+                <p>تسوق ابرز المنتجات التي تناسبك</p>
+            </div>
+            <span class="right-shape"></span>
+            <span class="bottom-shape"></span>
+        </div>
+
+        <div class="products-cards">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="assets/images/shoes.png" alt="Shoes Image">
+                    <div class="overlay">
+                        <div class="overlay-image">
+                            <img class="overlay-img" src="assets/images/overlay-shoes.png" alt="Shoes Overlay Image">
+                        </div>
+
+                        <div class="overlay-heart">
+                            <img class="heart-icon" src="assets/icons/heart-card.svg" alt="Heart Icon">
+                        </div>
+
+                        <div class="overlay-buttons">
+                            <div class="add-to-cart">
+                                <img src="assets/icons/shopping-cart.svg" alt="Shopping Icon">
+                                <p> أضف للسلة</p>
+                            </div>
+                            <div class="view-product">
+                                <img src="assets/icons/eye.svg" alt="Eye Icon">
+                                <p>عرض المنتج</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-data">
+                    <div class="cat">
+                        <p class="name">حقيبة ظهر</p>
+                        <p class="price">500 ر.س</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="rate">
+                        <p>حقائب</p>
+                        <div class="stars">
+                            <img src="assets/icons/star.svg" alt="Star Icon">
+                            <img src="assets/icons/star.svg" alt="Star Icon">
+                            <img src="assets/icons/star.svg" alt="Star Icon">
+                            <img src="assets/icons/star.svg" alt="Star Icon">
+                            <img src="assets/icons/star.svg" alt="Star Icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="assets/images/pants.png" alt="Pants Image">
+
+                    <div class="overlay">
+                        <div class="overlay-image">
+                            <img class="overlay-img" src="assets/images/overlay-pants.png" alt="Pants Overlay Image">
+                        </div>
+
+                        <div class="overlay-heart">
+                            <img class="heart-icon" src="assets/icons/heart-card.svg" alt="Heart Icon">
+                        </div>
+
+                        <div class="overlay-buttons">
+                            <div class="add-to-cart">
+                                <img src="assets/icons/shopping-cart.svg" alt="Shopping Icon">
+                                <p> أضف للسلة</p>
+                            </div>
+                            <div class="view-product">
+                                <img src="assets/icons/eye.svg" alt="Eye Icon">
+                                <p>عرض المنتج</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="product-data">
+                    <div class="cat">
+                        <p class="name">حقيبة ظهر</p>
+                        <p class="price">500 ر.س</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="rate">
+                        <p>حقائب</p>
+                        <div class="stars">
+                            <img src="assets/icons/star.svg" alt="Star Icon">
+                            <img src="assets/icons/star.svg" alt="Star Icon">
+                            <img src="assets/icons/star.svg" alt="Star Icon">
+                            <img src="assets/icons/star.svg" alt="Star Icon">
+                            <img src="assets/icons/star.svg" alt="Star Icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="assets/images/bag.png" alt="Bag Image">
+
+                    <div class="overlay">
+                        <div class="overlay-image">
+                            <img class="overlay-img" src="assets/images/overlay-bag.png" alt="Bag Overlay Image">
+                        </div>
+
+                        <div class="overlay-heart">
+                            <img class="heart-icon" src="assets/icons/heart-card.svg" alt="Heart Icon">
+                        </div>
+
+                        <div class="overlay-buttons">
+                            <div class="add-to-cart">
+                                <img src="assets/icons/shopping-cart.svg" alt="Shopping Icon">
+                                <p> أضف للسلة</p>
+                            </div>
+                            <div class="view-product">
+                                <img src="assets/icons/eye.svg" alt="Eye Icon">
+                                <p>عرض المنتج</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="product-data">
+                    <div class="cat">
+                        <p class="name">حقيبة ظهر</p>
+                        <p class="price">500 ر.س</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="rate">
+                        <p>حقائب</p>
+                        <div class="stars">
+                            <img src="assets/icons/star.svg" alt="Star Icon">
+                            <img src="assets/icons/star.svg" alt="Star Icon">
+                            <img src="assets/icons/star.svg" alt="Star Icon">
+                            <img src="assets/icons/star.svg" alt="Star Icon">
+                            <img src="assets/icons/star.svg" alt="Star Icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- End Products -->
+
+    <!-- Promo -->
+    <section class="promo container">
+        <div class="item item-1">
+            <div class="content">
+                <h2>استعد للتميز</h2>
+                <p>ارتقِ بأدائك مع ملابس مصممة خصيصًا للرياضيين</p>
+                <button>تسوق الآن</button>
+            </div>
+        </div>
+
+        <div class="item item-2">
+            <img src="assets/images/promo 1.png" alt="Promo Image 1" class="promo-image">
+
+            <div class="data">
+                <div class="image">
+                    <img src="assets/images/promo-dumble.png" alt="Promo Dumble Image">
+                </div>
+                <div class="price-and-rate">
+                    <p class="cat">ادوات رياضية</p>
+                    <h3>وزن 6 كجم</h3>
+                    <div class="price-div">
+                        <p class="price">500 ر.س</p>
+                        <p class="instead-of">بدلا من</p>
+                        <p class="offer">200 ر.س</p>
+                    </div>
+                    <div class="stars">
+                        <img src="assets/icons/star.svg" alt="Star Icon">
+                        <img src="assets/icons/star.svg" alt="Star Icon">
+                        <img src="assets/icons/star.svg" alt="Star Icon">
+                        <img src="assets/icons/star.svg" alt="Star Icon">
+                        <img src="assets/icons/star.svg" alt="Star Icon">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="item item-3">
+            <img src="assets/images/promo 2.png" alt="Promo Image 2" class="promo-image">
+
+            <div class="data">
+                <div class="image">
+                    <img src="assets/images/promo-shoes.png" alt="Promo Shoes Image">
+                </div>
+                <div class="price-and-rate">
+                    <p class="cat">احذية</p>
+                    <h3>حذاء رياضي </h3>
+                    <div class="price-div">
+                        <p class="price">500 ر.س</p>
+                        <p class="instead-of">بدلا من</p>
+                        <p class="offer">200 ر.س</p>
+                    </div>
+                    <div class="stars">
+                        <img src="assets/icons/star.svg" alt="Star Icon">
+                        <img src="assets/icons/star.svg" alt="Star Icon">
+                        <img src="assets/icons/star.svg" alt="Star Icon">
+                        <img src="assets/icons/star.svg" alt="Star Icon">
+                        <img src="assets/icons/star.svg" alt="Star Icon">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="item item-4">
+            <img src="assets/images/promo 3.png" alt="Promo Image 3" class="promo-image">
+
+            <div class="data">
+                <div class="image">
+                    <img src="assets/images/promo-pants.png" alt="Promo Pants Image">
+                </div>
+                <div class="price-and-rate">
+                    <p class="cat">ملابس نسائية</p>
+                    <h3>ليجن ازرق </h3>
+                    <div class="price-div">
+                        <p class="price">500 ر.س</p>
+                        <p class="instead-of">بدلا من</p>
+                        <p class="offer">200 ر.س</p>
+                    </div>
+                    <div class="stars">
+                        <img src="assets/icons/star.svg" alt="Star Icon">
+                        <img src="assets/icons/star.svg" alt="Star Icon">
+                        <img src="assets/icons/star.svg" alt="Star Icon">
+                        <img src="assets/icons/star.svg" alt="Star Icon">
+                        <img src="assets/icons/star.svg" alt="Star Icon">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="item item-5">
+            <div class="content">
+                <h2>استعد للتحدي</h2>
+                <p>ارتقِ بأدائك مع ملابس مصممة خصيصًا للرياضيين</p>
+                <button>تسوق الآن</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Promo -->
+
+    <script src="JS/main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,66 @@
+nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: $primary-color;
+  padding: 0.8rem 0;
+  background: linear-gradient(
+    to right,
+    $primary-color 0%,
+    $primary-color 63%,
+    $secondary-color 63%,
+    $secondary-color 100%
+  );
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      .logo {
+        @include circle(4rem);
+        background-color: $white-color;
+
+        img {
+          height: 3.5rem;
+        }
+      }
+
+      ul {
+        display: flex;
+        gap: 2rem;
+        color: $white-color;
+      }
+    }
+
+    .icons {
+      display: flex;
+      gap: 1rem;
+
+      div {
+        @include circle(2.5rem);
+        background-color: $white-color;
+        text-align: center;
+        line-height: 3rem;
+      }
+
+      .shopping-cart {
+        position: relative;
+        background-color: $secondary-color;
+
+        .num {
+          position: absolute;
+          top: -8px;
+          right: -4px;
+          background-color: $white-color;
+          @include circle(1.2rem);
+          color: $secondary-color;
+          text-align: center;
+          line-height: 1.2rem;
+        }
+      }
+    }
+  }
+}

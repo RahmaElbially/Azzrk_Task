@@ -1,0 +1,37 @@
+.products {
+  padding: 4rem 0;
+  text-align: center;
+  .products-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 90% !important;
+  }
+  .products-cards {
+    grid-template-columns: repeat(2, 1fr) !important;
+    .overlay {
+      .overlay-buttons {
+        flex-direction: column;
+        gap: 0;
+
+        .add-to-cart,
+        .view-product {
+          width: 100%;
+          transform: translateY(50px);
+          opacity: 0;
+        }
+        img {
+          width: 1rem !important;
+        }
+        p {
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
+}

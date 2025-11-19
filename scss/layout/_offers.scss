@@ -1,0 +1,55 @@
+.offers {
+  padding: 4rem 0;
+  text-align: center;
+  background-color: $light-gray;
+  width: 100vw;
+  position: relative;
+  .top-left-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .bottom-right-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .container {
+    overflow-x: hidden;
+    position: relative;
+    z-index: 10;
+    .slider-container {
+      overflow-x: scroll;
+      overflow-y: hidden;
+      scroll-behavior: smooth;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      scrollbar-width: none;
+
+      .offers-cards {
+        display: flex;
+        gap: 2rem;
+        padding: 1rem 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 90% !important;
+  }
+}

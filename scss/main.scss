@@ -1,10 +1,21 @@
-@import "base/variables";
-@import "base/mixins";
+@import "abstract/variables";
+@import "abstract/mixins";
 @import "base/reset";
+@import "base/typography";
+
+@import "components/btn";
+@import "components/section-title";
 
 @import "components/navbar";
-@import "components/hero";
-@import "components/products";
-@import "components/promo";
+@import "layout/hero";
 
-@import "layout/grid";
+@import "components/products-card";
+@import "layout/products";
+
+@import "components/promo-card";
+@import "layout/promo";
+
+@import "components/offers-card";
+@import "layout/offers";
+
+@import "layout/footer";

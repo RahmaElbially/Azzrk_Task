@@ -1,0 +1,24 @@
+.promo {
+  padding: 3rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90% !important;
+  }
+  .promo {
+    display: block;
+    .item {
+      width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+      .data {
+        @include flex(space-around, center);
+      }
+    }
+  }
+}

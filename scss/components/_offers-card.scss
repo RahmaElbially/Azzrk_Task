@@ -1,0 +1,30 @@
+.offer-card {
+  flex: 0 0 auto;
+  cursor: grab;
+  img {
+    height: 330px;
+    width: auto;
+    display: block;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .data {
+    margin-top: 2rem;
+    h3 {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 0.6rem;
+    }
+    p {
+      font-weight: 700;
+      color: $secondary-color;
+      span {
+        color: #b9b9b9;
+        text-decoration: line-through;
+        font-weight: normal;
+        margin-right: 0.6rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.button {
+  padding: 0.5rem 2.5rem;
+  font-size: 1rem;
+  font-family: "Tajawal";
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+
+  &:hover {
+    transform: scale(0.8);
+  }
+}
